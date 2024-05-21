@@ -18,7 +18,6 @@ const getUserService = async () => {
       DT: data,
     };
   } catch (error) {
-    console.log(err);
     return {
       EM: "error getUserService",
       EC: -1,
