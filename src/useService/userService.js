@@ -31,6 +31,7 @@ const postUserService = async (data) => {
       userName: data.userName,
       password: data.password,
       email: data.email,
+      favorite: data.favorite,
     });
     let userData = {};
     if (user) {
@@ -63,6 +64,7 @@ const updateUserService = async (id, data) => {
         userName: data.userName,
         password: data.password,
         email: data.email,
+        favorite: data.favorite,
       },
       { where: { id: id } }
     );
